@@ -11,7 +11,7 @@ const genAI = new GoogleGenerativeAI(apiKey || 'dummy-key');
 
 // Use a model that supports JSON mode if possible, or standard Pro
 export const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash',
+    model: 'gemini-flash-latest',
     generationConfig: {
         responseMimeType: "application/json"
     }
